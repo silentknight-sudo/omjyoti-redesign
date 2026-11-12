@@ -1,4 +1,25 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/products/category/fire-pumps/:page", "destination": "/solutions/fire-fighting/", "permanent": true },
+    { "source": "/products/category/mineral-water-bottling-plant/:page", "destination": "/solutions/water-treatment/", "permanent": true },
+    { "source": "/products/category/air-compressor/:page", "destination": "/solutions/industrial/", "permanent": true },
+    { "source": "/products/category/air-dryer/:page", "destination": "/solutions/industrial/", "permanent": true },
+    { "source": "/products/category/ates-panel/:page", "destination": "/solutions/panels/", "permanent": true },
+    { "source": "/products/category/:cat/:page", "destination": "/products/", "permanent": true },
+    { "source": "/products/search/:term/:page", "destination": "/products/", "permanent": true },
+    { "source": "/products/tag/:tag/:page", "destination": "/products/", "permanent": true },
+    { "source": "/products/:slug/:id(\\d+)", "destination": "/products/:slug/", "permanent": true },
+    { "source": "/all-products/:page", "destination": "/products/", "permanent": true },
+    { "source": "/about-us", "destination": "/#about", "permanent": true },
+    { "source": "/image-gallery/:page", "destination": "/#gallery", "permanent": true },
+    { "source": "/brochure/:page", "destination": "/#gallery", "permanent": true },
+    { "source": "/latest-updates/:page", "destination": "/", "permanent": true },
+    { "source": "/latest-update/:slug/:id", "destination": "/", "permanent": true },
+    { "source": "/page/:slug/:id", "destination": "/", "permanent": true },
+    { "source": "/pages/:page", "destination": "/", "permanent": true },
+    { "source": "/mapview/:lat/:lng", "destination": "/#contact", "permanent": true }
+  ]
 }

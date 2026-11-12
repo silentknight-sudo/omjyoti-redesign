@@ -432,3 +432,14 @@ h1, h2, h3 { text-wrap: balance; }
   .show__steps li.is-on { display: grid; }
   .show__stage .callout span { font-size: 10.5px; padding: 4px 7px; }
 }
+
+/* ---------- FAQ ---------- */
+.faq { display: grid; gap: 10px; max-width: 920px; }
+.faq details { border-radius: 14px; background: var(--panel); box-shadow: inset 0 0 0 1px var(--line); transition: box-shadow .3s; }
+.faq details[open] { box-shadow: inset 0 0 0 1px rgba(31, 194, 94, .45); }
+.faq summary { position: relative; padding: 20px 56px 20px 22px; cursor: pointer; list-style: none; font: 700 clamp(17px, 1.6vw, 21px)/1.3 var(--f-display); }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: 22px; top: 50%; translate: 0 -50%; font: 400 26px var(--f-mono); color: var(--blue); transition: transform .3s var(--ease); }
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { margin: 0; padding: 0 22px 22px; color: var(--mute); max-width: 72ch; }
+h1.eyebrow { font-weight: 500; }

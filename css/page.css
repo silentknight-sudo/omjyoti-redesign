@@ -1,0 +1,39 @@
+/* Product, category and listing pages (static, no 3D). Builds on style.css tokens. */
+.subpage .nav { position: sticky; top: 0; }
+.sub__nav { display: flex; gap: 22px; margin-right: 8px; }
+.sub__nav a { font-size: 14px; color: var(--mute); transition: color .3s; }
+.sub__nav a:hover { color: var(--fg); }
+.page { padding-block: 28px clamp(70px, 10vh, 120px); }
+
+.crumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 28px; padding: 0; font: 500 12px var(--f-mono); letter-spacing: .04em; color: var(--mute); }
+.crumbs li + li::before { content: "/"; margin-right: 6px; opacity: .5; }
+.crumbs a:hover { color: var(--blue); }
+.crumbs [aria-current] { color: var(--fg); }
+
+.pd { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(28px, 5vw, 72px); align-items: start; }
+.pd__media { position: sticky; top: 96px; display: grid; place-items: center; padding: 22px; border-radius: 22px; background: #fff; }
+.pd__media img { width: 100%; height: auto; max-height: 70vh; object-fit: contain; }
+.pd h1, .cat h1 { margin: 0 0 16px; font: 800 clamp(32px, 4.2vw, 60px)/1 var(--f-display); font-stretch: 110%; letter-spacing: -.035em; text-wrap: balance; }
+.pd__summary { margin: 0 0 22px; font-size: 18px; color: var(--fg); max-width: 52ch; }
+.pd__cta { display: flex; flex-wrap: wrap; gap: 10px; margin: 6px 0 30px; }
+.pd__desc { color: var(--mute); font-size: 16px; max-width: 64ch; }
+.pd__desc p { margin: 0 0 14px; }
+.pd__desc p.lead { color: var(--fg); font-weight: 600; }
+.pd__desc .pd__h { margin: 22px 0 10px; font: 700 20px/1.2 var(--f-display); color: var(--fg); }
+.pd__desc ul { list-style: none; margin: 0 0 18px; padding: 0; display: grid; gap: 8px; }
+.pd__desc li { position: relative; padding-left: 18px; }
+.pd__desc li::before { content: ""; position: absolute; left: 0; top: .62em; width: 6px; height: 6px; border-radius: 50%; background: var(--blue); }
+.pd__area { margin: 24px 0 8px; padding: 16px 18px; border-radius: 12px; background: var(--panel); box-shadow: inset 0 0 0 1px var(--line); color: var(--mute); font-size: 14.5px; }
+
+.cat { max-width: 860px; margin-bottom: clamp(30px, 6vh, 60px); }
+.cat > p:not(.kicker) { margin: 0 0 16px; color: var(--mute); font-size: 17px; max-width: 70ch; }
+.related { margin-top: clamp(50px, 8vh, 90px); }
+.related .h2 { margin-bottom: 26px; font-size: clamp(26px, 3vw, 40px); max-width: none; }
+.related .h2 a:hover { color: var(--blue); }
+.subpage .prod { text-decoration: none; }
+
+@media (max-width: 860px) {
+  .pd { grid-template-columns: minmax(0, 1fr); }
+  .pd__media { position: static; }
+  .sub__nav { display: none; }
+}

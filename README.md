@@ -17,3 +17,14 @@ Static site (no backend). Content, product data and images come from www.omjyoti
 
 ## Images
 `assets/images/` — logo, hero banners, 22 product photos (`products/`), gallery & RO-process steps (`gallery/g08–g22`).
+
+## SEO
+`npm run build` runs `scripts/seo.mjs`, which writes into `dist/`:
+- `/products/<slug>/` — one page per product (title, description, canonical, Open Graph, Product + Breadcrumb schema, related products)
+- `/solutions/<category>/` — 7 keyword landing pages, plus `/products/` listing everything
+- `sitemap.xml`, `robots.txt`, `404.html`
+- LocalBusiness + WebSite schema on the homepage (the FAQ schema lives in `index.html`)
+
+Canonical URLs default to `https://www.omjyoti.co.in`. If the site is served from another domain, set the `SITE_URL` environment variable in Vercel.
+`vercel.json` permanently redirects the old omjyoti.co.in URLs (`/products/<slug>/<id>`, `/all-products/…`, `/about-us`, …) to their new pages.
+Product and category copy lives in `scripts/build_products.py` / `src/products.json` and the `CATS` table in `scripts/seo.mjs`.

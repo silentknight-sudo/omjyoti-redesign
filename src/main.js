@@ -265,7 +265,6 @@ function applyFilter(f) {
   });
 }
 $$(".chip").forEach((chip) => chip.addEventListener("click", () => applyFilter(chip.dataset.filter)));
-$$("[data-goto]").forEach((a) => a.addEventListener("click", () => setTimeout(() => applyFilter(a.dataset.goto), 900)));
 
 const modal = $("#modal");
 let lastFocus = null;
@@ -292,7 +291,7 @@ function openModal(slug) {
   $("#modalCat").textContent = p.category;
   $("#modalTitle").textContent = p.name;
   $("#modalDesc").innerHTML = renderBlocks(p.blocks);
-  $("#modalLink").href = p.url;
+  $("#modalLink").href = `/products/${p.slug}/`;
   $("#modalEnquire").dataset.name = p.name;
   modal.hidden = false;
   $(".modal__body", modal).scrollTop = 0;
@@ -309,7 +308,8 @@ function closeModal() {
     onComplete: () => { modal.hidden = true; if (lenis) lenis.start(); if (lastFocus) lastFocus.focus(); },
   });
 }
-prods.forEach((c) => c.addEventListener("click", () => openModal(c.dataset.slug)));
+// cards are real links for search engines; on the homepage they open the quick-view popup
+prods.forEach((c) => c.addEventListener("click", (e) => { e.preventDefault(); openModal(c.dataset.slug); }));
 $$("[data-close]", modal).forEach((el) => el.addEventListener("click", closeModal));
 $("#modalEnquire").addEventListener("click", (e) => {
   const name = e.currentTarget.dataset.name;

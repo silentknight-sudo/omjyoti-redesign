@@ -57,11 +57,11 @@ for i, p in enumerate(products, 1):
     e = html.escape
     cat = re.sub(r"[^a-z]+", "-", p["category"].lower()).strip("-")
     cards.append(
-        f'<button class="prod" type="button" data-slug="{p["slug"]}" data-cat="{cat}" aria-label="{e(p["name"])}: view details">'
+        f'<a class="prod" href="/products/{p["slug"]}/" data-slug="{p["slug"]}" data-cat="{cat}">'
         f'<span class="prod__img"><img src="{p["img"]}" alt="{e(p["name"])}" loading="lazy" decoding="async" /></span>'
         f'<span class="prod__meta"><span>{e(p["category"])}</span><span>{i:02d}</span></span>'
         f'<span class="prod__name">{e(p["name"])}</span><span class="prod__text">{e(p["summary"])}</span>'
-        f'<span class="prod__go" aria-hidden="true">↗</span></button>')
+        f'<span class="prod__go" aria-hidden="true">↗</span></a>')
 markup = "\n".join("          " + c for c in cards)
 
 index = ROOT / "index.html"
