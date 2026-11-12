@@ -1,0 +1,18 @@
+{
+  "name": "omjyoti-redesign",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/main.js --bundle --minify --format=iife --target=es2019 --outfile=js/app.js",
+    "watch": "esbuild src/main.js --bundle --format=iife --outfile=js/app.js --watch",
+    "serve": "npx --yes serve -l 5173 ."
+  },
+  "dependencies": {
+    "gsap": "3.12.5",
+    "lenis": "1.1.13",
+    "three": "0.170.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.24.0"
+  }
+}

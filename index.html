@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Om Jyoti Engineering Enterprises</title>
+  <meta name="description" content="Om Jyoti Engineering Enterprises (E.S.T.D. 2000), Noida: Mineral Water Plants, Industrial Pumps, RO Plants, Fire Fighting Systems, STP and Rain Water Harvesting. Design, supply, installation and maintenance." />
+  <meta name="theme-color" content="#0a0f0c" />
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== LOADER: a flow meter counting up ===== -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__top"><img src="assets/images/logo.png" alt="" width="64" height="64" /><span>Om Jyoti Engineering Enterprises</span></div>
+    <div class="loader__meter"><span class="odo" id="loaderOdo" data-digits="3"></span><small>% primed</small></div>
+    <div class="loader__bar"><i id="loaderBar"></i></div>
+  </div>
+
+  <div class="cursor" aria-hidden="true"><i class="cursor__dot"></i><i class="cursor__ring"><b id="cursorLabel"></b></i></div>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <a href="#top" class="brand" aria-label="Om Jyoti Engineering Enterprises, home">
+      <span class="brand__seal"><img src="assets/images/logo.png" alt="" width="40" height="40" /></span>
+      <span class="brand__text"><b>OM JYOTI</b><small>Engineering Enterprises</small></span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#products">Products</a>
+      <a href="#in3d">3D</a>
+      <a href="#process">RO process</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn--sm" href="#contact"><span>Get a quote</span><i>→</i></a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+  <div class="menu" id="menu" aria-hidden="true">
+    <a href="#about">About</a><a href="#solutions">Solutions</a><a href="#products">Products</a><a href="#in3d">Products in 3D</a><a href="#process">RO process</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+    <p>080 4275 4407 · +91 99101 09627<br />D 239, Sector 10, Noida 201301</p>
+  </div>
+
+  <main id="top">
+
+    <!-- ===== HERO: pump set, assembled → exploded → impeller ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__stage">
+        <div class="hero__grid" aria-hidden="true"></div>
+        <canvas class="hero__gl" id="pumpGl" aria-hidden="true"></canvas>
+
+        <div class="callouts" aria-hidden="true">
+          <div class="callout" data-part="motor" data-anchor="0,1.25,0"><i></i><span><b>01</b>Electric motor</span></div>
+          <div class="callout" data-part="coupling" data-anchor="0,0.4,0"><i></i><span><b>02</b>Flexible coupling</span></div>
+          <div class="callout" data-part="shaft" data-anchor="0.8,0.15,0"><i></i><span><b>03</b>Pump shaft</span></div>
+          <div class="callout" data-part="bracket" data-anchor="0,0.5,0"><i></i><span><b>04</b>Bearing bracket</span></div>
+          <div class="callout" data-part="impeller" data-anchor="0,0.95,0"><i></i><span><b>05</b>Impeller</span></div>
+          <div class="callout" data-part="casing" data-anchor="0,2.05,0.62"><i></i><span><b>06</b>Volute casing</span></div>
+          <div class="callout" data-part="base" data-anchor="2.9,-1.5,0.95"><i></i><span><b>07</b>Base frame</span></div>
+        </div>
+
+        <div class="hero__intro wrap">
+          <p class="eyebrow"><span class="eyebrow__dot"></span>Since 2000 · Noida, Uttar Pradesh</p>
+          <h1 class="hero__title"><span class="ln"><span>Engineered</span></span><span class="ln"><span>to flow.</span></span></h1>
+          <p class="hero__last"><span>Designed to last.</span></p>
+          <p class="hero__sub">Mineral water plants, industrial pumps, RO plants, fire fighting systems and rain water harvesting. We design, supply, install and maintain them across India.</p>
+          <div class="hero__cta">
+            <a href="#products" class="btn"><span>Explore 22 products</span><i>→</i></a>
+            <a href="tel:08042754407" class="btn btn--ghost"><span>080 4275 4407</span></a>
+          </div>
+        </div>
+
+        <div class="hero__phase hero__phase--anatomy wrap"><p class="kicker">Anatomy of a pump set</p><p class="hero__phasecopy">Every part, supplied, installed and serviced by one team.</p></div>
+        <div class="hero__phase hero__phase--flow wrap"><p class="hero__big"><span>Pressure.</span><span>Flow.</span><span class="is-blue">Purity.</span></p></div>
+
+        <ol class="hero__steps" aria-hidden="true">
+          <li class="is-on"><i></i>Assembled</li>
+          <li><i></i>Anatomy</li>
+          <li><i></i>Impeller</li>
+        </ol>
+        <p class="hero__scroll" aria-hidden="true"><i></i>Scroll</p>
+      </div>
+    </section>
+
+    <!-- ===== MARQUEE ===== -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track" id="ticker">
+        <span>Mineral Water Plants</span><b>/</b><span>Industrial RO</span><b>/</b><span>Fire Fighting</span><b>/</b><span>Pumps &amp; Motors</span><b>/</b><span>Sewage Treatment</span><b>/</b><span>Rain Water Harvesting</span><b>/</b><span>Chillers</span><b>/</b><span>Air Compressors</span><b>/</b>
+      </div>
+    </div>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="sec" id="about">
+      <div class="wrap">
+        <p class="kicker">01 — About us</p>
+        <h2 class="statement" id="statement">Incepted in the year 2000, M/S Om Jyoti Engineering Enterprises is a distinguished Manufacturer, Distributor, Retailer and Service Provider of water and industrial engineering solutions.</h2>
+        <div class="about">
+          <div class="about__copy">
+            <p>We specialize in the design, supply, installation and maintenance of advanced water treatment systems, centrifugal pumps, industrial machinery and air compressors for residential, commercial and industrial applications.</p>
+            <p>As a trusted <strong>Fire Fighting System Contractor</strong> and <strong>Industrial Pump Supplier</strong>, we deliver complete turnkey solutions: fire hydrant and sprinkler systems, high-pressure fire pumps and pump automation panels, in compliance with industry standards. Our expertise extends to RO water treatment, packaged drinking water plants, wastewater management and water recycling.</p>
+            <p>We are recognized as a reliable <strong>STP, RO Plant and Industrial Equipment Supplier in India</strong>, with a strong focus on quality, innovation and timely project execution.</p>
+          </div>
+          <div class="meters">
+            <div class="meter"><span class="odo" data-value="2000" data-digits="4"></span><small>Year established</small></div>
+            <div class="meter"><span class="odo" data-value="25" data-digits="2" data-suffix="+"></span><small>Years in service</small></div>
+            <div class="meter"><span class="odo" data-value="22" data-digits="2"></span><small>Products in our range</small></div>
+            <div class="meter"><span class="odo" data-value="14" data-digits="2"></span><small>Steps to build an RO plant</small></div>
+          </div>
+        </div>
+        <div class="brands"><p>Pumps &amp; motors we deal in</p><ul><li>KSB</li><li>Kirloskar</li><li>GL</li><li>Grundfos</li><li>Wilo</li></ul></div>
+      </div>
+    </section>
+
+    <!-- ===== SOLUTIONS: stacking cards ===== -->
+    <section class="sec" id="solutions">
+      <div class="wrap">
+        <div class="sec__head"><p class="kicker">02 — Solutions</p><h2 class="h2 split">Six lines of work. One accountable team.</h2></div>
+        <div class="stack">
+          <article class="scard">
+            <div class="scard__body"><p class="scard__no">01 / 06</p><p class="scard__k">Pumps &amp; motors</p><h3>Moving water, reliably.</h3><p>Supply, dealing and service of industrial pumps and motors for homes, buildings and factories, with authorised service support for KSB pumps.</p><ul><li>KSB, Kirloskar, GL, Grundfos, Wilo</li><li>HVAC pump sets &amp; hydropneumatic systems</li><li>Installation, repair &amp; AMC</li></ul><a class="link" href="#products" data-goto="pumps">View pumps →</a></div>
+            <div class="scard__media"><img src="assets/images/products/pumps-motors.jpg" alt="Pumps and motors" loading="lazy" /></div>
+          </article>
+          <article class="scard">
+            <div class="scard__body"><p class="scard__no">02 / 06</p><p class="scard__k">Water treatment</p><h3>Purity in every drop.</h3><p>Complete mineral water plant setups using RO, UV and ozonation, and industrial RO plants that remove up to 99% of TDS.</p><ul><li>Mineral water plants, BIS &amp; FSSAI compliant</li><li>Industrial RO plants, 100 L to 50,000 L</li><li>Water softeners &amp; ozone generators</li></ul><a class="link" href="#products" data-goto="water-treatment">View water treatment →</a></div>
+            <div class="scard__media"><img src="assets/images/products/mineral-water-plant.jpg" alt="Mineral water plant" loading="lazy" /></div>
+          </article>
+          <article class="scard">
+            <div class="scard__body"><p class="scard__no">03 / 06</p><p class="scard__k">Fire fighting</p><h3>Protect what matters most.</h3><p>OM JYOTI EDJ fire fighting systems: compact, skid-mounted, factory tested and designed as per NFPA 20 / IS 12845.</p><ul><li>Fire hydrant &amp; sprinkler systems</li><li>Electric, diesel &amp; jockey fire pumps</li><li>Automatic &amp; manual control</li></ul><a class="link" href="#products" data-goto="fire-fighting">View fire fighting →</a></div>
+            <div class="scard__media"><img src="assets/images/products/fire-pumps-end-suction-pumpset.jpg" alt="Fire pump set" loading="lazy" /></div>
+          </article>
+          <article class="scard">
+            <div class="scard__body"><p class="scard__no">04 / 06</p><p class="scard__k">Wastewater</p><h3>Treat, reuse, recycle.</h3><p>Prefabricated, modular sewage treatment plants using MBBR / SBR technology, and leak-proof FRP septic tanks.</p><ul><li>STP from 1 KLD to 500 KLD and beyond</li><li>FRP septic tanks</li><li>Water recycling</li></ul><a class="link" href="#products" data-goto="wastewater">View wastewater →</a></div>
+            <div class="scard__media"><img src="assets/images/products/sewage-treatment-plant.jpg" alt="Sewage treatment plant" loading="lazy" /></div>
+          </article>
+          <article class="scard">
+            <div class="scard__body"><p class="scard__no">05 / 06</p><p class="scard__k">Rain water harvesting</p><h3>Every drop, recharged.</h3><p>Modular systems that collect, filter, store and recharge rainwater, with storage blocks that install under roads and parking areas.</p><ul><li>Underground modular storage</li><li>Multi-layer filtration</li><li>Groundwater recharge</li></ul><a class="link" href="#products" data-goto="wastewater">View systems →</a></div>
+            <div class="scard__media"><img src="assets/images/products/rain-water-harvesting.jpg" alt="Rain water harvesting system" loading="lazy" /></div>
+          </article>
+          <article class="scard">
+            <div class="scard__body"><p class="scard__no">06 / 06</p><p class="scard__k">Industrial &amp; bottling</p><h3>Power behind production.</h3><p>Bottling machinery, compressed air, cooling and power panels for factories and packaged drinking water plants.</p><ul><li>PET blowing, RFC &amp; shrink wrap machines</li><li>Air compressors, dryers &amp; chillers</li><li>ATS &amp; VFD panels</li></ul><a class="link" href="#products" data-goto="industrial">View industrial →</a></div>
+            <div class="scard__media"><img src="assets/images/products/air-compressor.jpg" alt="Air compressor and air dryer" loading="lazy" /></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCTS ===== -->
+    <section class="sec" id="products">
+      <div class="wrap">
+        <div class="sec__head sec__head--row">
+          <div><p class="kicker">03 — Products</p><h2 class="h2 split">Featured products.</h2></div>
+          <div class="filters" role="toolbar" aria-label="Filter products">
+            <button type="button" class="chip is-on" data-filter="all">All <i>22</i></button>
+            <button type="button" class="chip" data-filter="water-treatment">Water treatment <i>5</i></button>
+            <button type="button" class="chip" data-filter="fire-fighting">Fire fighting <i>3</i></button>
+            <button type="button" class="chip" data-filter="pumps">Pumps <i>3</i></button>
+            <button type="button" class="chip" data-filter="wastewater">Wastewater <i>3</i></button>
+            <button type="button" class="chip" data-filter="bottling">Bottling <i>3</i></button>
+            <button type="button" class="chip" data-filter="industrial">Industrial <i>3</i></button>
+            <button type="button" class="chip" data-filter="panels">Panels <i>2</i></button>
+          </div>
+        </div>
+        <div class="prods" id="prods">
+          <!-- PRODUCTS:START -->
+          <button class="prod" type="button" data-slug="mineral-water-plant" data-cat="water-treatment" aria-label="Mineral Water Plant: view details"><span class="prod__img"><img src="assets/images/products/mineral-water-plant.jpg" alt="Mineral Water Plant" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Water Treatment</span><span>01</span></span><span class="prod__name">Mineral Water Plant</span><span class="prod__text">Complete RO, UV &amp; ozonation setup with filling and packaging, BIS &amp; FSSAI compliant.</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <button class="prod" type="button" data-slug="industrial-ro-plant" data-cat="water-treatment" aria-label="Industrial RO Plant: view details"><span class="prod__img"><img src="assets/images/products/industrial-ro-plant.jpg" alt="Industrial RO Plant" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Water Treatment</span><span>02</span></span><span class="prod__name">Industrial RO Plant</span><span class="prod__text">Removes up to 99% TDS. Capacities from 100 L to 50,000 L.</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <button class="prod" type="button" data-slug="mineral-water-plant-softner" data-cat="water-treatment" aria-label="Mineral Water Plant Softener: view details"><span class="prod__img"><img src="assets/images/products/mineral-water-plant-softner.jpg" alt="Mineral Water Plant Softener" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Water Treatment</span><span>03</span></span><span class="prod__name">Mineral Water Plant Softener</span><span class="prod__text">Removes calcium &amp; magnesium to protect RO membranes and filling machines.</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <button class="prod" type="button" data-slug="water-softening-palnt" data-cat="water-treatment" aria-label="Water Softening Plant: view details"><span class="prod__img"><img src="assets/images/products/water-softening-palnt.jpg" alt="Water Softening Plant" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Water Treatment</span><span>04</span></span><span class="prod__name">Water Softening Plant</span><span class="prod__text">Ion-exchange softeners that stop scale and extend equipment life.</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <button class="prod" type="button" data-slug="ozone-generator" data-cat="water-treatment" aria-label="Ozone Generator: view details"><span class="prod__img"><img src="assets/images/products/ozone-generator.jpg" alt="Ozone Generator" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Water Treatment</span><span>05</span></span><span class="prod__name">Ozone Generator</span><span class="prod__text">Chemical-free disinfection and oxidation using ozone (O₃).</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <button class="prod" type="button" data-slug="pet-blowing-machine" data-cat="bottling" aria-label="PET Blowing Machine: view details"><span class="prod__img"><img src="assets/images/products/pet-blowing-machine.jpg" alt="PET Blowing Machine" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Bottling</span><span>06</span></span><span class="prod__name">PET Blowing Machine</span><span class="prod__text">Turns PET preforms into uniform, clear, strong bottles.</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <button class="prod" type="button" data-slug="rinsing-filling-capping-machine-rfc" data-cat="bottling" aria-label="Rinsing Filling Capping (RFC): view details"><span class="prod__img"><img src="assets/images/products/rinsing-filling-capping-machine-rfc.jpg" alt="Rinsing Filling Capping (RFC)" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Bottling</span><span>07</span></span><span class="prod__name">Rinsing Filling Capping (RFC)</span><span class="prod__text">3-in-1 rinsing, filling and capping with PLC control and SS build.</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <button class="prod" type="button" data-slug="shrink-wrap-packaging" data-cat="bottling" aria-label="Shrink Wrap Packaging Machine: view details"><span class="prod__img"><img src="assets/images/products/shrink-wrap-packaging.jpg" alt="Shrink Wrap Packaging Machine" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Bottling</span><span>08</span></span><span class="prod__name">Shrink Wrap Packaging Machine</span><span class="prod__text">Heat-shrink packaging for bottles and jars, automatic or semi-automatic.</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <button class="prod" type="button" data-slug="fire-fighting-system" data-cat="fire-fighting" aria-label="Fire Fighting System (EDJ): view details"><span class="prod__img"><img src="assets/images/products/fire-fighting-system.jpg" alt="Fire Fighting System (EDJ)" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Fire Fighting</span><span>09</span></span><span class="prod__name">Fire Fighting System (EDJ)</span><span class="prod__text">Compact skid-mounted systems designed as per NFPA 20 / IS 12845.</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <button class="prod" type="button" data-slug="fire-pumps-end-suction-pumpset" data-cat="fire-fighting" aria-label="Fire Pumps – End Suction: view details"><span class="prod__img"><img src="assets/images/products/fire-pumps-end-suction-pumpset.jpg" alt="Fire Pumps – End Suction" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Fire Fighting</span><span>10</span></span><span class="prod__name">Fire Pumps – End Suction</span><span class="prod__text">Electric, diesel-driven and jockey pumps for hydrants, sprinklers and hose reels.</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <button class="prod" type="button" data-slug="jockey-pumps" data-cat="fire-fighting" aria-label="Jockey Pumps: view details"><span class="prod__img"><img src="assets/images/products/jockey-pumps.jpg" alt="Jockey Pumps" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Fire Fighting</span><span>11</span></span><span class="prod__name">Jockey Pumps</span><span class="prod__text">Keep fire mains pressurised so the main pump starts only when needed.</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <button class="prod" type="button" data-slug="pumps-motors" data-cat="pumps" aria-label="Pumps &amp; Motors: view details"><span class="prod__img"><img src="assets/images/products/pumps-motors.jpg" alt="Pumps &amp; Motors" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Pumps</span><span>12</span></span><span class="prod__name">Pumps &amp; Motors</span><span class="prod__text">KSB, Kirloskar, GL, Grundfos &amp; Wilo, with authorised KSB service support.</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <button class="prod" type="button" data-slug="hvac-pumpset" data-cat="pumps" aria-label="HVAC Pump Set: view details"><span class="prod__img"><img src="assets/images/products/hvac-pumpset.jpg" alt="HVAC Pump Set" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Pumps</span><span>13</span></span><span class="prod__name">HVAC Pump Set</span><span class="prod__text">Efficient circulation of chilled and hot water across HVAC systems.</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <button class="prod" type="button" data-slug="hydropneumatics-system" data-cat="pumps" aria-label="Hydropneumatic System: view details"><span class="prod__img"><img src="assets/images/products/hydropneumatics-system.jpg" alt="Hydropneumatic System" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Pumps</span><span>14</span></span><span class="prod__name">Hydropneumatic System</span><span class="prod__text">Constant water pressure at every outlet, without overhead tanks.</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <button class="prod" type="button" data-slug="sewage-treatment-plant" data-cat="wastewater" aria-label="Sewage Treatment Plant: view details"><span class="prod__img"><img src="assets/images/products/sewage-treatment-plant.jpg" alt="Sewage Treatment Plant" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Wastewater</span><span>15</span></span><span class="prod__name">Sewage Treatment Plant</span><span class="prod__text">Prefabricated MBBR / SBR plants from 1 KLD to 500 KLD and beyond.</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <button class="prod" type="button" data-slug="septic-tank" data-cat="wastewater" aria-label="FRP Septic Tank: view details"><span class="prod__img"><img src="assets/images/products/septic-tank.jpg" alt="FRP Septic Tank" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Wastewater</span><span>16</span></span><span class="prod__name">FRP Septic Tank</span><span class="prod__text">Leak-proof, corrosion-resistant FRP, far lighter than RCC.</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <button class="prod" type="button" data-slug="rain-water-harvesting" data-cat="wastewater" aria-label="Rain Water Harvesting: view details"><span class="prod__img"><img src="assets/images/products/rain-water-harvesting.jpg" alt="Rain Water Harvesting" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Wastewater</span><span>17</span></span><span class="prod__name">Rain Water Harvesting</span><span class="prod__text">Modular systems that collect, filter, store and recharge rainwater.</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <button class="prod" type="button" data-slug="air-compressor" data-cat="industrial" aria-label="Air Compressor: view details"><span class="prod__img"><img src="assets/images/products/air-compressor.jpg" alt="Air Compressor" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Industrial</span><span>18</span></span><span class="prod__name">Air Compressor</span><span class="prod__text">Energy-efficient compressors built for 24/7 heavy-duty operation.</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <button class="prod" type="button" data-slug="air-dryer" data-cat="industrial" aria-label="Air Dryer: view details"><span class="prod__img"><img src="assets/images/products/air-dryer.jpg" alt="Air Dryer" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Industrial</span><span>19</span></span><span class="prod__name">Air Dryer</span><span class="prod__text">Refrigerated, desiccant, heatless &amp; heated dryers for moisture-free air.</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <button class="prod" type="button" data-slug="industrial-chiller" data-cat="industrial" aria-label="Industrial Chiller: view details"><span class="prod__img"><img src="assets/images/products/industrial-chiller.jpg" alt="Industrial Chiller" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Industrial</span><span>20</span></span><span class="prod__name">Industrial Chiller</span><span class="prod__text">Precision cooling. Maximum efficiency. Uninterrupted performance.</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <button class="prod" type="button" data-slug="vfd-panels" data-cat="panels" aria-label="VFD Panels: view details"><span class="prod__img"><img src="assets/images/products/vfd-panels.jpg" alt="VFD Panels" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Panels</span><span>21</span></span><span class="prod__name">VFD Panels</span><span class="prod__text">Variable frequency drives for energy-efficient motor speed control.</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <button class="prod" type="button" data-slug="ates-panel" data-cat="panels" aria-label="ATS Panel: view details"><span class="prod__img"><img src="assets/images/products/ates-panel.jpg" alt="ATS Panel" loading="lazy" decoding="async" /></span><span class="prod__meta"><span>Panels</span><span>22</span></span><span class="prod__name">ATS Panel</span><span class="prod__text">Automatic mains-to-DG changeover that keeps operations running.</span><span class="prod__go" aria-hidden="true">↗</span></button>
+          <!-- PRODUCTS:END -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCTS IN 3D: pinned showcase ===== -->
+    <section class="show" id="in3d">
+      <div class="show__pin">
+        <div class="wrap show__inner">
+          <div class="show__text">
+            <p class="kicker">Products in 3D</p>
+            <div class="show__tabs" id="showTabs" role="tablist" aria-label="Choose a product"></div>
+            <div class="show__panels" id="showPanels"></div>
+          </div>
+          <div class="show__stage">
+            <canvas id="showGl" aria-label="Animated 3D model of the selected product"></canvas>
+            <div class="callouts" id="showLabels" aria-hidden="true"></div>
+            <p class="show__count"><b id="showNo">01</b><span id="showOf">/ 06</span></p>
+            <p class="show__hint">Drag to rotate</p>
+            <div class="show__bar"><i id="showBar"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RO PROCESS: pinned split ===== -->
+    <section class="process" id="process">
+      <div class="process__pin">
+        <div class="wrap process__inner">
+          <div class="process__left">
+            <p class="kicker">04 — How we build your RO plant</p>
+            <h2 class="h2">Raw water to pure water in 14 steps.</h2>
+            <div class="process__list">
+              <div class="process__rail"><i id="procRail"></i></div>
+              <ol id="procList"></ol>
+            </div>
+          </div>
+          <div class="process__right">
+            <div class="frame" id="procFrame">
+              <div class="frame__count"><b id="procNo">01</b><span>/ 15</span></div>
+            </div>
+            <p class="process__cap" id="procCap"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="sec" id="services">
+      <div class="wrap">
+        <div class="sec__head"><p class="kicker">05 — Services</p><h2 class="h2 split">Your one-stop engineering partner.</h2></div>
+        <ol class="svc">
+          <li><span class="svc__n">01</span><h3>Design &amp; engineering</h3><p>Solutions designed around your requirement, built for durability and regulatory compliance.</p><i class="svc__arrow">→</i></li>
+          <li><span class="svc__n">02</span><h3>Supply</h3><p>Pumps, plants, machinery and panels, including KSB, Kirloskar, GL, Grundfos and Wilo.</p><i class="svc__arrow">→</i></li>
+          <li><span class="svc__n">03</span><h3>Installation &amp; commissioning</h3><p>On-site installation, startup and validation, ready to perform from day one.</p><i class="svc__arrow">→</i></li>
+          <li><span class="svc__n">04</span><h3>Turnkey projects</h3><p>End-to-end delivery from concept to commissioning, with documentation and handover.</p><i class="svc__arrow">→</i></li>
+          <li><span class="svc__n">05</span><h3>Maintenance &amp; AMC</h3><p>Repair, servicing and annual maintenance contracts, including authorised KSB pump service.</p><i class="svc__arrow">→</i></li>
+          <li><span class="svc__n">06</span><h3>After-sales support</h3><p>Dedicated support for smooth operations and long, reliable performance.</p><i class="svc__arrow">→</i></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY: 3D tilted wall ===== -->
+    <section class="sec gallery" id="gallery">
+      <div class="wrap"><div class="sec__head"><p class="kicker">06 — Gallery</p><h2 class="h2 split">Pictures that speak.</h2></div></div>
+      <div class="wall" id="wall">
+        <div class="wall__plane">
+          <div class="wall__row" data-speed="-1">
+            <button class="tile" type="button" data-full="assets/images/gallery/g01.jpg"><img src="assets/images/gallery/g01.jpg" alt="Complete engineering solutions under one roof" loading="lazy" /></button>
+            <button class="tile tile--w" type="button" data-full="assets/images/hero-2.jpg"><img src="assets/images/hero-2.jpg" alt="Complete solutions for mineral water plant" loading="lazy" /></button>
+            <button class="tile" type="button" data-full="assets/images/gallery/g02.jpg"><img src="assets/images/gallery/g02.jpg" alt="Before and after an RO plant" loading="lazy" /></button>
+            <button class="tile tile--w" type="button" data-full="assets/images/products/industrial-ro-plant.jpg"><img src="assets/images/products/industrial-ro-plant.jpg" alt="Industrial RO plant" loading="lazy" /></button>
+            <button class="tile" type="button" data-full="assets/images/gallery/g03.jpg"><img src="assets/images/gallery/g03.jpg" alt="Fire safety for your building" loading="lazy" /></button>
+            <button class="tile tile--w" type="button" data-full="assets/images/products/rinsing-filling-capping-machine-rfc.jpg"><img src="assets/images/products/rinsing-filling-capping-machine-rfc.jpg" alt="Rinsing filling capping machine" loading="lazy" /></button>
+          </div>
+          <div class="wall__row" data-speed="1">
+            <button class="tile tile--w" type="button" data-full="assets/images/gallery/g22.jpg"><img src="assets/images/gallery/g22.jpg" alt="Completed RO plant, ready to perform" loading="lazy" /></button>
+            <button class="tile" type="button" data-full="assets/images/gallery/g04.jpg"><img src="assets/images/gallery/g04.jpg" alt="Expectation versus reality" loading="lazy" /></button>
+            <button class="tile tile--w" type="button" data-full="assets/images/products/fire-pumps-end-suction-pumpset.jpg"><img src="assets/images/products/fire-pumps-end-suction-pumpset.jpg" alt="Fire pump set" loading="lazy" /></button>
+            <button class="tile" type="button" data-full="assets/images/gallery/g05.jpg"><img src="assets/images/gallery/g05.jpg" alt="Start your own mineral water plant" loading="lazy" /></button>
+            <button class="tile tile--w" type="button" data-full="assets/images/gallery/g24.jpg"><img src="assets/images/gallery/g24.jpg" alt="Automatic transfer switch panel" loading="lazy" /></button>
+            <button class="tile" type="button" data-full="assets/images/gallery/g06.jpg"><img src="assets/images/gallery/g06.jpg" alt="Complete RO plant solutions" loading="lazy" /></button>
+          </div>
+          <div class="wall__row" data-speed="-1">
+            <button class="tile tile--w" type="button" data-full="assets/images/products/hydropneumatics-system.jpg"><img src="assets/images/products/hydropneumatics-system.jpg" alt="Hydropneumatic system" loading="lazy" /></button>
+            <button class="tile" type="button" data-full="assets/images/gallery/g07.jpg"><img src="assets/images/gallery/g07.jpg" alt="Quality which pays back every day" loading="lazy" /></button>
+            <button class="tile tile--w" type="button" data-full="assets/images/products/shrink-wrap-packaging.jpg"><img src="assets/images/products/shrink-wrap-packaging.jpg" alt="Shrink wrap packaging machine" loading="lazy" /></button>
+            <button class="tile tile--w" type="button" data-full="assets/images/products/vfd-panels.jpg"><img src="assets/images/products/vfd-panels.jpg" alt="VFD panels" loading="lazy" /></button>
+            <button class="tile tile--w" type="button" data-full="assets/images/products/septic-tank.jpg"><img src="assets/images/products/septic-tank.jpg" alt="FRP septic tanks" loading="lazy" /></button>
+            <button class="tile tile--w" type="button" data-full="assets/images/products/pet-blowing-machine.jpg"><img src="assets/images/products/pet-blowing-machine.jpg" alt="PET blowing machine" loading="lazy" /></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AREAS ===== -->
+    <section class="sec" id="areas">
+      <div class="wrap areas">
+        <div><p class="kicker">07 — Where we work</p><h2 class="h2 split">Based in Noida. Working across India.</h2><p class="areas__note">From our Noida office we supply, install and service projects across Delhi NCR, Uttar Pradesh and beyond.</p></div>
+        <ul class="cities">
+          <li><span>01</span>Noida</li><li><span>02</span>Greater Noida</li><li><span>03</span>Ghaziabad</li><li><span>04</span>Sahibabad</li><li><span>05</span>Okhla, Delhi</li><li><span>06</span>Agra</li><li><span>07</span>Kanpur</li><li><span>08</span>Muzaffarnagar</li><li><span>09</span>South Tripura</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="sec" id="contact">
+      <div class="wrap">
+        <p class="kicker">08 — Contact</p>
+        <h2 class="mega" id="mega">Let's talk water.</h2>
+        <div class="contact">
+          <div class="contact__lines">
+            <div class="cl"><small>Phone · keep 0 before dialling</small><a href="tel:08042754407">080 4275 4407</a></div>
+            <div class="cl"><small>Call / WhatsApp</small><a href="https://wa.me/919910109627" target="_blank" rel="noopener">+91 99101 09627</a></div>
+            <div class="cl"><small>Email</small><a href="mailto:omjyotientp@gmail.com">omjyotientp@gmail.com</a></div>
+            <div class="cl"><small>Address</small><a href="https://www.google.com/maps?q=28.5926677,77.3334739" target="_blank" rel="noopener">D 239, Sector 10, Noida, Uttar Pradesh 201301 ↗</a></div>
+          </div>
+          <form class="form" id="enquiry" novalidate>
+            <h3>Have any custom requirements?</h3>
+            <div class="form__row">
+              <label for="fName"><span>Your name</span><input id="fName" name="name" required autocomplete="name" /></label>
+              <label for="fPhone"><span>Phone</span><input id="fPhone" name="phone" required inputmode="tel" autocomplete="tel" /></label>
+            </div>
+            <label for="needSelect"><span>Requirement</span>
+              <select name="need" id="needSelect">
+                <option>Mineral Water Plant</option><option>Industrial RO Plant</option><option>Fire Fighting System</option><option>Pumps &amp; Motors</option><option>Sewage Treatment Plant</option><option>Rain Water Harvesting</option><option>Bottling machinery</option><option>Air Compressor / Dryer / Chiller</option><option>ATS / VFD Panel</option><option>Service / AMC</option><option>Other</option>
+              </select></label>
+            <label for="fMsg"><span>Message</span><textarea id="fMsg" name="msg" rows="3"></textarea></label>
+            <div class="form__actions">
+              <button class="btn" type="submit" data-via="whatsapp"><span>Send on WhatsApp</span><i>→</i></button>
+              <button class="btn btn--ghost" type="submit" data-via="email"><span>Send by email</span></button>
+            </div>
+            <p class="form__msg" id="formMsg" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div class="footer__brand"><span class="brand__seal brand__seal--lg"><img src="assets/images/logo.png" alt="Om Jyoti Engineering Enterprises logo" loading="lazy" /></span><p><b>Om Jyoti Engineering Enterprises</b>Pure water, better life.</p></div>
+        <div><h4>Explore</h4><a href="#about">About</a><a href="#solutions">Solutions</a><a href="#products">Products</a><a href="#process">RO process</a><a href="#gallery">Gallery</a></div>
+        <div><h4>Top categories</h4><span>Fire Pumps</span><span>Mineral Water Bottling Plant</span><span>Air Compressor</span><span>Air Dryer</span><span>ATS Panel</span></div>
+        <div><h4>Reach us</h4><span>080 4275 4407</span><span>+91 99101 09627</span><span>omjyotientp@gmail.com</span><span>D 239, Sector 10, Noida 201301</span></div>
+      </div>
+      <div class="footer__word" id="footWord" aria-hidden="true">OM JYOTI</div>
+      <div class="footer__row"><p>© <span id="year"></span> Om Jyoti Engineering Enterprises, Noida</p><p>Engineered to flow. Designed to last.</p><a href="#top">Back to top ↑</a></div>
+    </div>
+  </footer>
+
+  <!-- Product modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel">
+      <button class="modal__close" type="button" aria-label="Close" data-close>×</button>
+      <div class="modal__media"><img id="modalImg" alt="" /></div>
+      <div class="modal__body">
+        <p class="modal__cat" id="modalCat"></p>
+        <h3 id="modalTitle"></h3>
+        <div class="modal__desc" id="modalDesc"></div>
+        <div class="modal__actions">
+          <button class="btn" type="button" id="modalEnquire"><span>Enquire about this</span><i>→</i></button>
+          <a class="btn btn--ghost" id="modalLink" target="_blank" rel="noopener"><span>View on current site ↗</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lightbox" id="lightbox" hidden><button class="modal__close" type="button" aria-label="Close">×</button><img id="lightboxImg" alt="" /></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
