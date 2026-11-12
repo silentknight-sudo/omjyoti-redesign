@@ -48,7 +48,7 @@ for slug, (name, cat, summary) in META.items():
     p = raw[slug]
     img = sorted((ROOT / "assets/images/products").glob(slug + ".*"))[0].relative_to(ROOT).as_posix()
     products.append({"slug": slug, "name": name, "category": cat, "summary": summary, "img": img,
-                     "url": f"https://www.omjyoti.co.in/products/{slug}/", "blocks": clean(p["desc"])})
+                     "url": f"/products/{slug}/", "blocks": clean(p["desc"])})
 
 (ROOT / "src/products.json").write_text(json.dumps(products, ensure_ascii=False, indent=1))
 

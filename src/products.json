@@ -5,7 +5,7 @@
   "category": "Water Treatment",
   "summary": "Complete RO, UV & ozonation setup with filling and packaging, BIS & FSSAI compliant.",
   "img": "assets/images/products/mineral-water-plant.jpg",
-  "url": "https://www.omjyoti.co.in/products/mineral-water-plant/",
+  "url": "/products/mineral-water-plant/",
   "blocks": [
    [
     "A Mineral Water Plant Setup is a complete system designed to purify and package safe drinking water using advanced technologies like RO, UV, and ozonation. It removes impurities, bacteria, and harmful chemicals while maintaining essential minerals for better taste and health."
@@ -21,7 +21,7 @@
   "category": "Water Treatment",
   "summary": "Removes up to 99% TDS. Capacities from 100 L to 50,000 L.",
   "img": "assets/images/products/industrial-ro-plant.jpg",
-  "url": "https://www.omjyoti.co.in/products/industrial-ro-plant/",
+  "url": "/products/industrial-ro-plant/",
   "blocks": [
    [
     "Industrial RO Plant by Om Jyoti Engineering Enterprises",
@@ -76,7 +76,7 @@
   "category": "Water Treatment",
   "summary": "Removes calcium & magnesium to protect RO membranes and filling machines.",
   "img": "assets/images/products/mineral-water-plant-softner.jpg",
-  "url": "https://www.omjyoti.co.in/products/mineral-water-plant-softner/",
+  "url": "/products/mineral-water-plant-softner/",
   "blocks": [
    [
     "Mineral Water Plant Softener – Om Jyoti Engineering Enterprises"
@@ -136,7 +136,7 @@
   "category": "Water Treatment",
   "summary": "Ion-exchange softeners that stop scale and extend equipment life.",
   "img": "assets/images/products/water-softening-palnt.jpg",
-  "url": "https://www.omjyoti.co.in/products/water-softening-palnt/",
+  "url": "/products/water-softening-palnt/",
   "blocks": [
    [
     "Water Softening Plant by Om Jyoti Engineering Enterprises",
@@ -187,7 +187,7 @@
   "category": "Water Treatment",
   "summary": "Chemical-free disinfection and oxidation using ozone (O₃).",
   "img": "assets/images/products/ozone-generator.jpg",
-  "url": "https://www.omjyoti.co.in/products/ozone-generator/",
+  "url": "/products/ozone-generator/",
   "blocks": [
    [
     "Ozone Generator – Om Jyoti Engineering Enterprises"
@@ -277,7 +277,7 @@
   "category": "Bottling",
   "summary": "Turns PET preforms into uniform, clear, strong bottles.",
   "img": "assets/images/products/pet-blowing-machine.jpg",
-  "url": "https://www.omjyoti.co.in/products/pet-blowing-machine/",
+  "url": "/products/pet-blowing-machine/",
   "blocks": [
    [
     "PET Blowing Machine – Om Jyoti Engineering Enterprises"
@@ -319,7 +319,7 @@
   "category": "Bottling",
   "summary": "3-in-1 rinsing, filling and capping with PLC control and SS build.",
   "img": "assets/images/products/rinsing-filling-capping-machine-rfc.jpg",
-  "url": "https://www.omjyoti.co.in/products/rinsing-filling-capping-machine-rfc/",
+  "url": "/products/rinsing-filling-capping-machine-rfc/",
   "blocks": [
    [
     "Rinsing Filling Capping Machine (RFC) – Om Jyoti Engineering Enterprises"
@@ -356,7 +356,7 @@
   "category": "Bottling",
   "summary": "Heat-shrink packaging for bottles and jars, automatic or semi-automatic.",
   "img": "assets/images/products/shrink-wrap-packaging.jpg",
-  "url": "https://www.omjyoti.co.in/products/shrink-wrap-packaging/",
+  "url": "/products/shrink-wrap-packaging/",
   "blocks": [
    [
     "Shrink Wrap Packaging Machine – Om Jyoti Engineering Enterprises"
@@ -400,7 +400,7 @@
   "category": "Fire Fighting",
   "summary": "Compact skid-mounted systems designed as per NFPA 20 / IS 12845.",
   "img": "assets/images/products/fire-fighting-system.jpg",
-  "url": "https://www.omjyoti.co.in/products/fire-fighting-system/",
+  "url": "/products/fire-fighting-system/",
   "blocks": [
    [
     "Protect What Matters Most with OM JYOTI EDJ Firefighting Systems"
@@ -436,7 +436,7 @@
   "category": "Fire Fighting",
   "summary": "Electric, diesel-driven and jockey pumps for hydrants, sprinklers and hose reels.",
   "img": "assets/images/products/fire-pumps-end-suction-pumpset.jpg",
-  "url": "https://www.omjyoti.co.in/products/fire-pumps-end-suction-pumpset/",
+  "url": "/products/fire-pumps-end-suction-pumpset/",
   "blocks": [
    [
     "Om Jyoti Engineering Enterprises – Fire Pumps"
@@ -458,7 +458,7 @@
   "category": "Fire Fighting",
   "summary": "Keep fire mains pressurised so the main pump starts only when needed.",
   "img": "assets/images/products/jockey-pumps.jpg",
-  "url": "https://www.omjyoti.co.in/products/jockey-pumps/",
+  "url": "/products/jockey-pumps/",
   "blocks": [
    [
     "A jockey pump is a small, low-capacity, high-pressure pump used in a fire protection system to maintain the water pressure in the piping (fire mains). It is an essential component designed to prevent the main fire pump from starting unnecessarily."
@@ -487,7 +487,7 @@
   "category": "Pumps",
   "summary": "KSB, Kirloskar, GL, Grundfos & Wilo, with authorised KSB service support.",
   "img": "assets/images/products/pumps-motors.jpg",
-  "url": "https://www.omjyoti.co.in/products/pumps-motors/",
+  "url": "/products/pumps-motors/",
   "blocks": [
    [
     "Pumps & Motors Solutions – Om Jyoti Engineering Enterprises"
@@ -530,7 +530,7 @@
   "category": "Pumps",
   "summary": "Efficient circulation of chilled and hot water across HVAC systems.",
   "img": "assets/images/products/hvac-pumpset.jpg",
-  "url": "https://www.omjyoti.co.in/products/hvac-pumpset/",
+  "url": "/products/hvac-pumpset/",
   "blocks": [
    [
     "HVAC Pump Set – Om Jyoti Engineering Enterprises"
@@ -604,7 +604,7 @@
   "category": "Pumps",
   "summary": "Constant water pressure at every outlet, without overhead tanks.",
   "img": "assets/images/products/hydropneumatics-system.jpg",
-  "url": "https://www.omjyoti.co.in/products/hydropneumatics-system/",
+  "url": "/products/hydropneumatics-system/",
   "blocks": [
    [
     "Hydropneumatics System – Om Jyoti Engineering Enterprises"
@@ -666,7 +666,7 @@
   "category": "Wastewater",
   "summary": "Prefabricated MBBR / SBR plants from 1 KLD to 500 KLD and beyond.",
   "img": "assets/images/products/sewage-treatment-plant.jpg",
-  "url": "https://www.omjyoti.co.in/products/sewage-treatment-plant/",
+  "url": "/products/sewage-treatment-plant/",
   "blocks": [
    [
     "Om Jyoti Engineering Enterprises, based in Noida, is a well-established manufacturer and service provider (active since 2000) specializing in water and wastewater management."
@@ -696,7 +696,7 @@
   "category": "Wastewater",
   "summary": "Leak-proof, corrosion-resistant FRP, far lighter than RCC.",
   "img": "assets/images/products/septic-tank.jpg",
-  "url": "https://www.omjyoti.co.in/products/septic-tank/",
+  "url": "/products/septic-tank/",
   "blocks": [
    [
     "FRP Septic Tank – Durable, Leak-Proof & Maintenance-Friendly Solution"
@@ -738,7 +738,7 @@
   "category": "Wastewater",
   "summary": "Modular systems that collect, filter, store and recharge rainwater.",
   "img": "assets/images/products/rain-water-harvesting.jpg",
-  "url": "https://www.omjyoti.co.in/products/rain-water-harvesting/",
+  "url": "/products/rain-water-harvesting/",
   "blocks": [
    [
     "Advanced Rain Water Harvesting System with Modular Technology",
@@ -801,7 +801,7 @@
   "category": "Industrial",
   "summary": "Energy-efficient compressors built for 24/7 heavy-duty operation.",
   "img": "assets/images/products/air-compressor.jpg",
-  "url": "https://www.omjyoti.co.in/products/air-compressor/",
+  "url": "/products/air-compressor/",
   "blocks": [
    [
     "Industrial Air Compressor – Product Details",
@@ -881,7 +881,7 @@
   "category": "Industrial",
   "summary": "Refrigerated, desiccant, heatless & heated dryers for moisture-free air.",
   "img": "assets/images/products/air-dryer.jpg",
-  "url": "https://www.omjyoti.co.in/products/air-dryer/",
+  "url": "/products/air-dryer/",
   "blocks": [
    [
     "Air Dryer – Om Jyoti Engineering Enterprises"
@@ -928,7 +928,7 @@
   "category": "Industrial",
   "summary": "Precision cooling. Maximum efficiency. Uninterrupted performance.",
   "img": "assets/images/products/industrial-chiller.jpg",
-  "url": "https://www.omjyoti.co.in/products/industrial-chiller/",
+  "url": "/products/industrial-chiller/",
   "blocks": [
    [
     "Precision Cooling. Maximum Efficiency. Uninterrupted Performance."
@@ -947,7 +947,7 @@
   "category": "Panels",
   "summary": "Variable frequency drives for energy-efficient motor speed control.",
   "img": "assets/images/products/vfd-panels.jpg",
-  "url": "https://www.omjyoti.co.in/products/vfd-panels/",
+  "url": "/products/vfd-panels/",
   "blocks": [
    [
     "VFD Panels – Om Jyoti Engineering Enterprises"
@@ -1023,7 +1023,7 @@
   "category": "Panels",
   "summary": "Automatic mains-to-DG changeover that keeps operations running.",
   "img": "assets/images/products/ates-panel.jpg",
-  "url": "https://www.omjyoti.co.in/products/ates-panel/",
+  "url": "/products/ates-panel/",
   "blocks": [
    [
     "Reliable Power. Seamless Switching. Uninterrupted Operations."

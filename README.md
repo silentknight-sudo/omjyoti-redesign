@@ -25,6 +25,6 @@ Static site (no backend). Content, product data and images come from www.omjyoti
 - `sitemap.xml`, `robots.txt`, `404.html`
 - LocalBusiness + WebSite schema on the homepage (the FAQ schema lives in `index.html`)
 
-Canonical URLs default to `https://www.omjyoti.co.in`. If the site is served from another domain, set the `SITE_URL` environment variable in Vercel.
-`vercel.json` permanently redirects the old omjyoti.co.in URLs (`/products/<slug>/<id>`, `/all-products/…`, `/about-us`, …) to their new pages.
+The site's address is `https://omjyoti.org` (no www). Canonical URLs, Open Graph tags, schema, the sitemap and robots.txt all use it; set the `SITE_URL` environment variable in Vercel only if that ever changes.
+`vercel.json` permanently redirects www.omjyoti.org, omjyoti.co.in and www.omjyoti.co.in to https://omjyoti.org, and maps the old omjyoti.co.in URLs (`/products/<slug>/<id>`, `/all-products/…`, `/about-us`, …) to their new pages.
 Product and category copy lives in `scripts/build_products.py` / `src/products.json` and the `CATS` table in `scripts/seo.mjs`.

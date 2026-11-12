@@ -7,7 +7,7 @@
 // Set SITE_URL (e.g. in Vercel's environment variables) if the site is served from another domain.
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 
-const DEFAULT_URL = "https://www.omjyoti.co.in";
+const DEFAULT_URL = "https://omjyoti.org";
 const SITE = (process.env.SITE_URL || DEFAULT_URL).replace(/\/+$/, "");
 const TODAY = new Date().toISOString().slice(0, 10);
 const PRODUCTS = JSON.parse(readFileSync("src/products.json", "utf8"));
