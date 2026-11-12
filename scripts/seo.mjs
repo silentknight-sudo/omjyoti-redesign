@@ -14,10 +14,9 @@ const PRODUCTS = JSON.parse(readFileSync("src/products.json", "utf8"));
 
 const BIZ = {
   name: "Om Jyoti Engineering Enterprises",
-  phone: "+91-80-4275-4407",
-  phoneDisplay: "080 4275 4407",
-  mobile: "+91-99101-09627",
-  mobileDisplay: "+91 99101 09627",
+  phone: "+91-99101-09627",
+  phoneDisplay: "+91 99101 09627",
+  tel: "tel:+919910109627",
   email: "omjyotientp@gmail.com",
   street: "D 239, Sector 10",
   city: "Noida",
@@ -160,7 +159,7 @@ function shell({ title, desc, path, image = "/assets/images/hero-2.jpg", jsonld 
       <a href="/products/">All products</a>
       <a href="/#contact">Contact</a>
     </nav>
-    <a class="btn btn--sm" href="tel:08042754407"><span>Call ${BIZ.phoneDisplay}</span></a>
+    <a class="btn btn--sm" href="${BIZ.tel}"><span>Call ${BIZ.phoneDisplay}</span></a>
   </header>
   <main class="page">
 ${body}
@@ -171,7 +170,7 @@ ${body}
         <div class="footer__brand"><span class="brand__seal brand__seal--lg"><img src="/assets/images/logo.png" alt="${esc(BIZ.name)} logo" loading="lazy" /></span><p><b>${esc(BIZ.name)}</b>Pure water, better life.</p></div>
         <div><h4>Solutions</h4>${Object.entries(CATS).map(([k, c]) => `<a href="/solutions/${k}/">${esc(c.label)}</a>`).join("")}</div>
         <div><h4>Company</h4><a href="/#about">About us</a><a href="/#process">RO plant process</a><a href="/#services">Services</a><a href="/products/">All products</a></div>
-        <div><h4>Reach us</h4><a href="tel:08042754407">${BIZ.phoneDisplay}</a><a href="tel:+919910109627">${BIZ.mobileDisplay}</a><a href="mailto:${BIZ.email}">${BIZ.email}</a><span>${esc(BIZ.street)}, ${BIZ.city} ${BIZ.postal}</span></div>
+        <div><h4>Reach us</h4><a href="${BIZ.tel}">${BIZ.phoneDisplay}</a><a href="https://wa.me/919910109627" target="_blank" rel="noopener">WhatsApp</a><a href="mailto:${BIZ.email}">${BIZ.email}</a><span>${esc(BIZ.street)}, ${BIZ.city} ${BIZ.postal}</span></div>
       </div>
       <div class="footer__row"><p>© ${new Date().getFullYear()} ${esc(BIZ.name)}, Noida</p><p>Engineered to flow. Designed to last.</p><a href="/">Home</a></div>
     </div>
@@ -197,7 +196,7 @@ const cta = (name) => {
   const wa = `https://wa.me/919910109627?text=${encodeURIComponent(`Enquiry from website: ${name}`)}`;
   return `<div class="pd__cta">
     <a class="btn" href="${wa}" target="_blank" rel="noopener"><span>Enquire on WhatsApp</span><i>→</i></a>
-    <a class="btn btn--ghost" href="tel:08042754407"><span>Call ${BIZ.phoneDisplay}</span></a>
+    <a class="btn btn--ghost" href="${BIZ.tel}"><span>Call ${BIZ.phoneDisplay}</span></a>
     <a class="btn btn--ghost" href="mailto:${BIZ.email}?subject=${encodeURIComponent(`Enquiry: ${name}`)}"><span>Email us</span></a>
   </div>`;
 };
@@ -327,7 +326,7 @@ writeFileSync("dist/404.html", shell({
     hasMap: `https://www.google.com/maps?q=${BIZ.lat},${BIZ.lng}`,
     contactPoint: [
       { "@type": "ContactPoint", telephone: BIZ.phone, contactType: "sales", areaServed: "IN", availableLanguage: ["English", "Hindi"] },
-      { "@type": "ContactPoint", telephone: BIZ.mobile, contactType: "customer service", areaServed: "IN", availableLanguage: ["English", "Hindi"] },
+      { "@type": "ContactPoint", telephone: BIZ.phone, contactType: "customer service", areaServed: "IN", availableLanguage: ["English", "Hindi"] },
     ],
     areaServed: AREAS.map((n) => ({ "@type": "City", name: n })),
     knowsAbout: ["Mineral water plants", "Industrial RO plants", "Fire fighting systems", "Fire pumps", "Sewage treatment plants", "Rain water harvesting", "Hydropneumatic systems", "Water softening plants", "KSB pumps", "Kirloskar pumps"],
