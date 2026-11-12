@@ -5,7 +5,7 @@ Static site (no backend). Content, product data and images come from www.omjyoti
 ## Open / run
 - Quick look: open `preview/omjyoti-preview.html` (single self-contained file; `preview/omjyoti-artifact.html` is the same page for the Claude artifact viewer).
 - Local server: `npm install && npm run serve`, then visit http://localhost:5173
-- Deploy: upload `index.html`, `css/`, `js/`, `assets/` to any static host (Netlify, Vercel, cPanel, GitHub Pages).
+- Deploy: `npm run build` bundles the JS and copies the site into `dist/`. Vercel is set up via `vercel.json` (output: `dist`); on any other static host, upload the contents of `dist/`.
 
 ## Edit
 - Page text: `index.html` · styles/colours: `css/style.css` (`:root` tokens)
